@@ -1,0 +1,114 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-image: url(coading.jpg);
+font-size: 14p;
+}
+.container
+{
+    position: relative;
+    width: 450px;
+    height: 300px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 3.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+    box-shadow: 0px 0px 10px 2px rgb(0,0,0,0.2);
+}
+.input-name
+{
+    width: 95%;
+    position: relative;
+    margin: 20px auto;
+}
+.Name
+{
+    width: 45%;
+    padding: 8px 0px 8px 40px;
+    margin-right: 1px;
+}
+.input-name span
+{
+    margin-left: 26px;
+
+}
+.text-Name
+{
+    width: 100%;
+    padding:8px ;
+}
+.input-text
+{
+    width: 100%;
+    padding: 8px;
+    
+}
+.inputName,.Password
+{
+    margin: 2px auto;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+.input-radio
+{
+    width: 36%;
+    margin:3%;
+    padding: 1px;
+}
+.radio-button
+{
+    margin-right: 2px;
+}
+.country
+{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: #7b7b7b;
+    appearance: none;
+}
+.check
+{
+    margin-right: 3px;
+    position: relative;
+    color: white;
+}
+.check::before
+{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -1px;
+    padding: 1px;
+}
+.input_box
+{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    background-color: blueviolet;
+}
+.submit_button
+{
+    position:absolute;
+    align-items: center;
+    margin-top: 100px;
+}
+.input-text
+{
+    position: relative;
+}
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="home_page.css">
+        <title>
+            BUGBENDERS | HOME
+        </title>
+        <style>
+            p {
+              color: navy;
+              text-indent: 30px;
+              text-transform: uppercase;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="tab">
+            <nav class="nav_bars">
+                <ul class="nav_bar">
+                    <li class="nav_link">
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="event">EVENT</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#quiz">QUIZ</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">NOTIFICATIONS</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#feedback_id">CONTACT US</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#about_us">ABOUT US</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">PROFILE</a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="login.html">SIGN IN</a>
+                    </li>
+                </ul>
+
+                </li>
+            </nav>
+            <div class="home_box1">
+                <p></p>
+            </div>
+            <div class="home_box2">
+                <h2>LEADER BOARD</h2>
+            </div>
+            <div class="home_box3">
+                <h2>UNKNOWN</h2>
+            </div>
+        </div>
+        <section id="home">
+        </section>
+        <section id="event">
+            <h1>EVENT PAGE</h1>
+        </section>
+        <section id="quiz">
+            <h1>QUIZ PAGE</h1>
+        </section>
+        <section id="about_us" class="about_page">
+            <div class="about1">
+                <div class="card1">
+                    <img src="img/1image-upscaled.jpeg" class="imgcard" alt="">
+                    <div class="card1Info">
+                        <h1>Introduction</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback" id="feedback_id">
+            <form action="https://formsubmit.co/raj12oct2001@gmail.com" method="POST" class="feedback_form">
+                <div class="form_feed">
+                    <h3 style="margin: -5px 100px;">FEEDBACK</h3>
+                    <div class="input_box">
+                        <input type="text"id="user" name="name" class="input-field" required>
+                        <label for="user" class="label">Name</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="email"id="email" name="email" class="input-field" required>
+                        <label for="email" class="label">Email</label>
+                    </div>
+                    <div class="input_box">
+                        <textarea placeholder="Type your message..." name="Message" class="msg-field"required></textarea>
+                    </div>
+                    <div class="login-button">
+                        <input type="submit"class="login_but" value="Submit">
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="login.html">
+                    <input type="hidden" name="_autoresponse" value="Thank you! We will respond you soon.">
+                    <input type="hidden" name="_template" value="table">
+                </div>
+            </form>
+            <script>
+                const textarea = document.querySelector("textarea");
+                textarea.addEventListener("keyup",e=>{
+                    textarea.style.height = "55px";
+                    let scHeight = e.target.scrollHeight;
+                    textarea.style.height = "auto"; 
+                    textarea.style.height = `${scHeight}px`;
+                });
+            </script>
+        </section>
+    </body>
+</html>
+<!DOCTYPE html>
